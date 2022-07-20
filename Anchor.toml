@@ -2,7 +2,7 @@
 seeds = false
 skip-lint = false
 [programs.devnet]
-sixteen_personalities = "2sZ2p39s4wTQrVteV8XP5r8d8cbqr2pdQnpvU3BvcbkK"
+sixteen_personalities = "oYt6UFzxCZLxweeFg9DQXipYjskuw3mANRbvBMaLNUa"
 
 [registry]
 url = "https://api.apr.dev"
