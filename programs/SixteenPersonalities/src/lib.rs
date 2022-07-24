@@ -6,15 +6,7 @@ declare_id!("CiLfoGqJQuKfXTMDgqrdPuXMGhzHAwEP8b7bizVQBeqp");
 pub mod sixteen_personalities {
     use super::*;
 
-    pub fn create_quiz(ctx: Context<Create>, 
-        authority: Pubkey
-    ) -> Result<()> {
-        let answer = &mut ctx.accounts.answer;
-        answer.authority = authority;
-        Ok(())
-    }
-
-    pub fn initialize(ctx: Context<Answers>,
+    pub fn initialize(ctx: Context<Create>,
         authority: Pubkey,
         i_am_a_worrier1: bool,
         i_make_friends_easily2: bool,
@@ -75,10 +67,21 @@ pub mod sixteen_personalities {
         i_have_a_lot_of_fun57: bool,
         i_believe_that_there_is_no_absolute_right_or_wrong58: bool,
         i_feel_sympathy_for_those_who_are_worse_off_than_myself59: bool,
-        i_make_rash_decisions60: bool
+        i_make_rash_decisions60: bool,
+        i_am_afraid_of_many_things61: bool,
+        i_avoid_coming_into_contact_with_people_if_i_can_help_it62: bool,
+        i_love_to_daydream63: bool,
+        i_trust_what_people_say64: bool,
+        i_handle_tasks_methodically65: bool,
+        i_frequently_lose_my_temper66: bool,
+        i_prefer_to_be_alone67: bool,
+        i_do_not_like_poetry68: bool,
+        i_sometimes_take_advantage_of_others69: bool,
+        i_sometimes_leave_the_place_in_a_mess70: bool
 
     ) -> Result<()> {
         let answer = &mut ctx.accounts.answer;
+        answer.authority = authority;
         answer.i_am_a_worrier1 = i_am_a_worrier1; let i_am_a_worrier1_ = answer.i_am_a_worrier1 as u8;
         answer.i_make_friends_easily2 = i_make_friends_easily2; let i_make_friends_easily2_ = answer.i_make_friends_easily2 as u8;
         answer.i_have_a_lot_of_imagination3 = i_have_a_lot_of_imagination3; let i_have_a_lot_of_imagination3_ = answer.i_have_a_lot_of_imagination3 as u8;
@@ -139,6 +142,16 @@ pub mod sixteen_personalities {
         answer.i_believe_that_there_is_no_absolute_right_or_wrong58 = i_believe_that_there_is_no_absolute_right_or_wrong58; let i_believe_that_there_is_no_absolute_right_or_wrong58_ = answer.i_believe_that_there_is_no_absolute_right_or_wrong58 as u8;
         answer.i_feel_sympathy_for_those_who_are_worse_off_than_myself59 = i_feel_sympathy_for_those_who_are_worse_off_than_myself59; let i_feel_sympathy_for_those_who_are_worse_off_than_myself59_ = answer.i_feel_sympathy_for_those_who_are_worse_off_than_myself59 as u8;
         answer.i_make_rash_decisions60 = i_make_rash_decisions60; let i_make_rash_decisions60_ = answer.i_make_rash_decisions60 as u8;
+        answer.i_am_afraid_of_many_things61 = i_am_afraid_of_many_things61; let i_am_afraid_of_many_things61_ = answer.i_am_afraid_of_many_things61 as u8;
+        answer.i_avoid_coming_into_contact_with_people_if_i_can_help_it62 = i_avoid_coming_into_contact_with_people_if_i_can_help_it62; let i_avoid_coming_into_contact_with_people_if_i_can_help_it62_ = answer.i_avoid_coming_into_contact_with_people_if_i_can_help_it62 as u8;
+        answer.i_love_to_daydream63 = i_love_to_daydream63; let i_love_to_daydream63_ = answer.i_love_to_daydream63 as u8;
+        answer.i_trust_what_people_say64 = i_trust_what_people_say64; let i_trust_what_people_say64_ = answer.i_trust_what_people_say64 as u8;
+        answer.i_handle_tasks_methodically65 = i_handle_tasks_methodically65; let i_handle_tasks_methodically65_ = answer.i_handle_tasks_methodically65 as u8;
+        answer.i_frequently_lose_my_temper66 = i_frequently_lose_my_temper66; let i_frequently_lose_my_temper66_ = answer.i_frequently_lose_my_temper66 as u8;
+        answer.i_prefer_to_be_alone67 = i_prefer_to_be_alone67; let i_prefer_to_be_alone67_ = answer.i_prefer_to_be_alone67 as u8;
+        answer.i_do_not_like_poetry68 = i_do_not_like_poetry68; let i_do_not_like_poetry68_ = answer.i_do_not_like_poetry68 as u8;
+        answer.i_sometimes_take_advantage_of_others69 = i_sometimes_take_advantage_of_others69; let i_sometimes_take_advantage_of_others69_ = answer.i_sometimes_take_advantage_of_others69 as u8;
+        answer.i_sometimes_leave_the_place_in_a_mess70 = i_sometimes_leave_the_place_in_a_mess70; let i_sometimes_leave_the_place_in_a_mess70_ = answer.i_sometimes_leave_the_place_in_a_mess70 as u8;
 
 
         let score: u8 = i_am_a_worrier1_ 
@@ -200,7 +213,17 @@ pub mod sixteen_personalities {
         + i_have_a_lot_of_fun57_
         + i_believe_that_there_is_no_absolute_right_or_wrong58_
         + i_feel_sympathy_for_those_who_are_worse_off_than_myself59_
-        + i_make_rash_decisions60_;
+        + i_make_rash_decisions60_
+        + i_am_afraid_of_many_things61_
+        + i_avoid_coming_into_contact_with_people_if_i_can_help_it62_
+        + i_love_to_daydream63_
+        + i_trust_what_people_say64_
+        + i_handle_tasks_methodically65_
+        + i_frequently_lose_my_temper66_
+        + i_prefer_to_be_alone67_
+        + i_do_not_like_poetry68_
+        + i_sometimes_take_advantage_of_others69_
+        + i_sometimes_leave_the_place_in_a_mess70_;
 
         if score <= 8 {
             msg!("ESTJ - The Controller: Everything around them should be and function as they wish.");
@@ -225,7 +248,7 @@ pub mod sixteen_personalities {
         } else if score > 80 && score <= 88 {
             msg!("ENFJ - The Guide: Just as they love to learn, they also love to teach.")
         } else if score > 88 && score <= 96 {
-            msg("ENFP - The Innovator: He loves the relationship with others and feeling part of a group.")
+            msg!("ENFP - The Innovator: He loves the relationship with others and feeling part of a group.")
         } else if score > 96 && score <= 104 {
             msg!("INTJ - The centered: They continually move in functionality to their own ideas.")
         } else if score > 104 && score <= 112 {
@@ -237,7 +260,10 @@ pub mod sixteen_personalities {
         }
         
 
-        msg!("{}", score);
+        pub fn delete_quiz(ctx: Context<Delete>) -> ProgramResult {
+            Ok(())
+        }
+
         Ok(())
     }
 }
@@ -252,8 +278,8 @@ pub struct Create<'info> {
 }
 
 #[derive(Accounts)]
-pub struct Answers<'info> {
-    #[account(mut, has_one = authority)]
+pub struct Delete<'info> {
+    #[account(mut, has_one = authority, close = authority)]
     pub answer: Account<'info, Answer16personalitites>,
     pub authority: Signer<'info>,
 }
@@ -320,8 +346,17 @@ pub struct Answer16personalitites {
     pub i_have_a_lot_of_fun57: bool,
     pub i_believe_that_there_is_no_absolute_right_or_wrong58: bool,
     pub i_feel_sympathy_for_those_who_are_worse_off_than_myself59: bool,
-    pub i_make_rash_decisions60: bool
-
+    pub i_make_rash_decisions60: bool,
+    pub i_am_afraid_of_many_things61: bool,
+    pub i_avoid_coming_into_contact_with_people_if_i_can_help_it62: bool,
+    pub i_love_to_daydream63: bool,
+    pub i_trust_what_people_say64: bool,
+    pub i_handle_tasks_methodically65: bool,
+    pub i_frequently_lose_my_temper66: bool,
+    pub i_prefer_to_be_alone67: bool,
+    pub i_do_not_like_poetry68: bool,
+    pub i_sometimes_take_advantage_of_others69: bool,
+    pub i_sometimes_leave_the_place_in_a_mess70:bool
 }
 
 impl Answer16personalitites {
@@ -331,5 +366,5 @@ impl Answer16personalitites {
 }
 
 const DISCRIMINATOR: usize = 8;
-const BOOL_ANSWERS: usize = 1 * 60;
+const BOOL_ANSWERS: usize = 1 * 70;
 const PUBKEY: usize = 32;

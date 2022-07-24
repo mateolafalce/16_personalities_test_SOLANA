@@ -8,22 +8,8 @@ describe("Sixteen Personalities Test", () => {
   const answer = anchor.web3.Keypair.generate();
 
 
-  it("Creating account", async () => {
-    const tx = await program.rpc.createQuiz(
-      provider.wallet.publicKey,
-    {
-      accounts: {
-        answer: answer.publicKey,
-        user: provider.wallet.publicKey,
-        systemProgram: SystemProgram.programId,
-      },
-      signers: [answer],
-    });
-    console.log("Your PDA has been created, check the signature", tx);
-  });
-
-
   it("Testing your personality", async () => {
+
     const txe = await program.rpc.initialize(
       provider.wallet.publicKey,
       false, //i_worry_about_everything1 ?
@@ -86,13 +72,36 @@ describe("Sixteen Personalities Test", () => {
       false, //i_believe_that_there_is_no_absolute_right_or_wrong58 ?
       false, //i_feel_sympathy_for_those_who_are_worse_off_than_myself59 ?
       false, //i_make_rash_decisions60 ?
+      false, //i_am_afraid_of_many_things61 ?
+      true, //i_avoid_coming_into_contact_with_people_if_i_can_help_it62 ?
+      true, //i_love_to_daydream ?
+      false, //i_trust_what_people_say64 ?
+      true, //i_handle_tasks_methodically65 ?
+      false, //i_frequently_lose_my_temper66 ?
+      false, //i_prefer_to_be_alone67 ?
+      true, //i_do_not_like_poetry68 ?
+      true, //i_sometimes_take_advantage_of_others69 ?
+      false, //i_sometimes_leave_the_place_in_a_mess70 ?
     {
       accounts: {
         answer: answer.publicKey,
-        authority: provider.wallet.publicKey,
-      }
+        user: provider.wallet.publicKey,
+        systemProgram: SystemProgram.programId,
+      },
+      signers: [answer],
     });
     console.log("The result of your personality test is here:", txe);
   });
+
+
+  /*it('can delete a tweet', async () => {
+    const del = await program.rpc.deleteQuiz({
+        accounts: {
+            answer: answer.publicKey,
+            authority: provider.wallet.publicKey,
+        },
+    });
+    console.log("You deleted your account",del)
+  });*/
 
 });
