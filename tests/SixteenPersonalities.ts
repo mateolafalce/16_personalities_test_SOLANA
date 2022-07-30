@@ -82,6 +82,26 @@ describe("Sixteen Personalities Test", () => {
       true, //i_do_not_like_poetry68 ?
       true, //i_sometimes_take_advantage_of_others69 ?
       false, //i_sometimes_leave_the_place_in_a_mess70 ?
+      false, //i_sometimes_am_down_in_the_dumps71 ?
+      true, //i_take_control_of_situations72 ?
+      false, //i_rarely_notice_my_emotional_reactions_and_feelings73 ?
+      true, //i_am_indifferent_to_the_feelings_of_others74 ?
+      true, //i_break_rules75 ?
+      false, //i_only_really_feel_comfortable_with_friends76 ?
+      true, //i_do_a_lot_in_my_spare_time77 ?
+      false, //i_dislike_changes78 ?
+      false, //i_insult_people79 ?
+      false, //i_do_just_enough_work_to_get_by80 ?
+      false, //i_easily_resist_temptations81 ?
+      true, //i_enjoy_taking_risks82 ?
+      false, //i_have_difficulty_understanding_abstract_ideals83 ?
+      true, //i_have_a_high_opinion_of_myself84 ?
+      false, //i_waste_my_time85 ?
+      false, //i_feel_that_im_unable_to_deal_with_things86 ?
+      true, //i_love_life87 ?
+      false, //i_believe_laws_should_be_strictly_enforced88 ?
+      true, //i_am_not_interested_in_other_peoples_problems89 ?
+      false, //i_rush_into_things90 ?
     {
       accounts: {
         answer: answer.publicKey,

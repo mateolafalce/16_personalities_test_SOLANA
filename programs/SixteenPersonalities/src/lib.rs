@@ -77,7 +77,27 @@ pub mod sixteen_personalities {
         i_prefer_to_be_alone67: bool,
         i_do_not_like_poetry68: bool,
         i_sometimes_take_advantage_of_others69: bool,
-        i_sometimes_leave_the_place_in_a_mess70: bool
+        i_sometimes_leave_the_place_in_a_mess70: bool,
+        i_sometimes_am_down_in_the_dumps71: bool,
+        i_take_control_of_situations72: bool,
+        i_rarely_notice_my_emotional_reactions_and_feelings73: bool,
+        i_am_indifferent_to_the_feelings_of_others74: bool,
+        i_break_rules75: bool,
+        i_only_really_feel_comfortable_with_friends76: bool,
+        i_do_a_lot_in_my_spare_time77: bool,
+        i_dislike_changes78: bool,
+        i_insult_people79: bool,
+        i_do_just_enough_work_to_get_by80: bool,
+        i_easily_resist_temptations81: bool,
+        i_enjoy_taking_risks82: bool,
+        i_have_difficulty_understanding_abstract_ideals83: bool,
+        i_have_a_high_opinion_of_myself84: bool,
+        i_waste_my_time85: bool,
+        i_feel_that_im_unable_to_deal_with_things86: bool,
+        i_love_life87: bool,
+        i_believe_laws_should_be_strictly_enforced88: bool,
+        i_am_not_interested_in_other_peoples_problems89: bool,
+        i_rush_into_things90: bool;
 
     ) -> Result<()> {
         let answer = &mut ctx.accounts.answer;
@@ -152,7 +172,27 @@ pub mod sixteen_personalities {
         answer.i_do_not_like_poetry68 = i_do_not_like_poetry68; let i_do_not_like_poetry68_ = answer.i_do_not_like_poetry68 as u8;
         answer.i_sometimes_take_advantage_of_others69 = i_sometimes_take_advantage_of_others69; let i_sometimes_take_advantage_of_others69_ = answer.i_sometimes_take_advantage_of_others69 as u8;
         answer.i_sometimes_leave_the_place_in_a_mess70 = i_sometimes_leave_the_place_in_a_mess70; let i_sometimes_leave_the_place_in_a_mess70_ = answer.i_sometimes_leave_the_place_in_a_mess70 as u8;
-
+        answer.i_sometimes_am_down_in_the_dumps71 = i_sometimes_am_down_in_the_dumps71; let i_sometimes_am_down_in_the_dumps71_ = answer.i_sometimes_am_down_in_the_dumps71 as u8;
+        answer.i_take_control_of_situations72 = i_take_control_of_situations72; let i_take_control_of_situations72_ = answer.i_take_control_of_situations72 as u8;
+        answer.i_rarely_notice_my_emotional_reactions_and_feelings73 = i_rarely_notice_my_emotional_reactions_and_feelings73; let i_rarely_notice_my_emotional_reactions_and_feelings73_ = answer.i_rarely_notice_my_emotional_reactions_and_feelings73 as u8;
+        answer.i_am_indifferent_to_the_feelings_of_others74 = i_am_indifferent_to_the_feelings_of_others74; let i_am_indifferent_to_the_feelings_of_others74_ = answer.i_am_indifferent_to_the_feelings_of_others74 as u8;
+        answer.i_break_rules75 = i_break_rules75; let i_break_rules75_ = answer.i_break_rules75 as u8;
+        answer.i_only_really_feel_comfortable_with_friends76 = i_only_really_feel_comfortable_with_friends76; let i_only_really_feel_comfortable_with_friends76_ = answer.i_only_really_feel_comfortable_with_friends76 as u8;
+        answer.i_do_a_lot_in_my_spare_time77 = i_do_a_lot_in_my_spare_time77; let i_do_a_lot_in_my_spare_time77_ = answer.i_do_a_lot_in_my_spare_time77 as u8;
+        answer.i_dislike_changes78 = i_dislike_changes78; let i_dislike_changes78_ = answer.i_dislike_changes78 as u8;
+        answer.i_insult_people79 = i_insult_people79; let i_insult_people79_ = answer.i_insult_people79 as u8;
+        answer.i_do_just_enough_work_to_get_by80 = i_do_just_enough_work_to_get_by80; let i_do_just_enough_work_to_get_by80_ = answer.i_do_just_enough_work_to_get_by80 as u8;
+        answer.i_easily_resist_temptations81 = i_easily_resist_temptations81; let i_easily_resist_temptations81_ = answer.i_easily_resist_temptations81 as u8;
+        answer.i_enjoy_taking_risks82 = i_enjoy_taking_risks82; let i_enjoy_taking_risks82_ = answer.i_enjoy_taking_risks82 as u8;
+        answer.i_have_difficulty_understanding_abstract_ideals83 = i_have_difficulty_understanding_abstract_ideals83; let i_have_difficulty_understanding_abstract_ideals83_ = answer.i_have_difficulty_understanding_abstract_ideals83 as u8;
+        answer.i_have_a_high_opinion_of_myself84 = i_have_a_high_opinion_of_myself84; let i_have_a_high_opinion_of_myself84_ = answer.i_have_a_high_opinion_of_myself84 as u8;
+        answer.i_waste_my_time85 = i_waste_my_time85; let i_waste_my_time85_ = answer.i_waste_my_time85 as u8;
+        answer.i_feel_that_im_unable_to_deal_with_things86 = i_feel_that_im_unable_to_deal_with_things86; let i_feel_that_im_unable_to_deal_with_things86_ = answer.i_feel_that_im_unable_to_deal_with_things86 as u8;
+        answer.i_love_life87 = i_love_life87; let i_love_life87_ = answer.i_love_life87 as u8;
+        answer.i_believe_laws_should_be_strictly_enforced88 = i_believe_laws_should_be_strictly_enforced88; let i_believe_laws_should_be_strictly_enforced88_ = answer.i_believe_laws_should_be_strictly_enforced88 as u8;
+        answer.i_am_not_interested_in_other_peoples_problems89 = i_am_not_interested_in_other_peoples_problems89; let i_am_not_interested_in_other_peoples_problems89_ = answer.i_am_not_interested_in_other_peoples_problems89 as u8;
+        answer.i_rush_into_things90 = i_rush_into_things90; let i_rush_into_things90_ = answer.i_rush_into_things90 as u8;
+        
 
         let score: u8 = i_am_a_worrier1_ 
         + i_make_friends_easily2_
@@ -223,7 +263,27 @@ pub mod sixteen_personalities {
         + i_prefer_to_be_alone67_
         + i_do_not_like_poetry68_
         + i_sometimes_take_advantage_of_others69_
-        + i_sometimes_leave_the_place_in_a_mess70_;
+        + i_sometimes_leave_the_place_in_a_mess70_
+        + i_sometimes_am_down_in_the_dumps71_
+        + i_take_control_of_situations72_
+        + i_rarely_notice_my_emotional_reactions_and_feelings73_
+        + i_am_indifferent_to_the_feelings_of_others74_
+        + i_break_rules75_
+        + i_only_really_feel_comfortable_with_friends76_
+        + i_do_a_lot_in_my_spare_time77_
+        + i_dislike_changes78_
+        + i_insult_people79_
+        + i_do_just_enough_work_to_get_by80_
+        + i_easily_resist_temptations81_
+        + i_enjoy_taking_risks82_
+        + i_have_difficulty_understanding_abstract_ideals83_
+        + i_have_a_high_opinion_of_myself84_
+        + i_waste_my_time85_
+        + i_feel_that_im_unable_to_deal_with_things86_
+        + i_love_life87_
+        + i_believe_laws_should_be_strictly_enforced88_
+        + i_am_not_interested_in_other_peoples_problems89_;
+        + i_rush_into_things90_;
 
         if score <= 8 {
             msg!("ESTJ - The Controller: Everything around them should be and function as they wish.");
@@ -356,7 +416,27 @@ pub struct Answer16personalitites {
     pub i_prefer_to_be_alone67: bool,
     pub i_do_not_like_poetry68: bool,
     pub i_sometimes_take_advantage_of_others69: bool,
-    pub i_sometimes_leave_the_place_in_a_mess70:bool
+    pub i_sometimes_leave_the_place_in_a_mess70:bool,
+    pub i_sometimes_am_down_in_the_dumps71: bool,
+    pub i_take_control_of_situations72: bool,
+    pub i_rarely_notice_my_emotional_reactions_and_feelings73: bool,
+    pub i_am_indifferent_to_the_feelings_of_others74: bool,
+    pub i_break_rules75: bool,
+    pub i_only_really_feel_comfortable_with_friends76: bool,
+    pub i_do_a_lot_in_my_spare_time77: bool,
+    pub i_dislike_changes78: bool,
+    pub i_insult_people79: bool,
+    pub i_do_just_enough_work_to_get_by80: bool,
+    pub i_easily_resist_temptations81: bool,
+    pub i_enjoy_taking_risks82: bool,
+    pub i_have_difficulty_understanding_abstract_ideals83: bool,
+    pub i_have_a_high_opinion_of_myself84: bool,
+    pub i_waste_my_time85: bool,
+    pub i_feel_that_im_unable_to_deal_with_things86: bool,
+    pub i_love_life87: bool,
+    pub i_believe_laws_should_be_strictly_enforced88: bool,
+    pub i_am_not_interested_in_other_peoples_problems89: bool,
+    pub i_rush_into_things90: bool,
 }
 
 impl Answer16personalitites {
@@ -366,5 +446,5 @@ impl Answer16personalitites {
 }
 
 const DISCRIMINATOR: usize = 8;
-const BOOL_ANSWERS: usize = 1 * 70;
+const BOOL_ANSWERS: usize = 1 * 90;
 const PUBKEY: usize = 32;
