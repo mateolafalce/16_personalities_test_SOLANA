@@ -102,6 +102,16 @@ describe("Sixteen Personalities Test", () => {
       false, //i_believe_laws_should_be_strictly_enforced88 ?
       true, //i_am_not_interested_in_other_peoples_problems89 ?
       false, //i_rush_into_things90 ?
+      false, //i_get_stressed_out_easily91 ?
+      false, //i_keep_others_at_a_distance92 ?
+      true, //i_like_to_get_lost_in_thought93 ?
+      true, //i_distrust_people94 ?
+      true, //i_know_how_to_get_things_done95 ?
+      true, //i_am_not_easily_annoyed96 ?
+      true, //i_avoid_crowds97 ?
+      false, //i_do_not_enjoy_going_to_art_galleries_or_exhibitions98 ? 
+      false, //i_sometimes_am_un_cooperative_i_hinder_other_peoples_plans99 ?
+      false, //i_leave_my_bits_and_pieces_and_belongings_around100 ?
     {
       accounts: {
         answer: answer.publicKey,

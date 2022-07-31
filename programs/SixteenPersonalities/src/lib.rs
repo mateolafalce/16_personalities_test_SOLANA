@@ -98,6 +98,16 @@ pub mod sixteen_personalities {
         i_believe_laws_should_be_strictly_enforced88: bool,
         i_am_not_interested_in_other_peoples_problems89: bool,
         i_rush_into_things90: bool;
+        i_get_stressed_out_easily91: bool,
+        i_keep_others_at_a_distance92: bool,
+        i_like_to_get_lost_in_thought93: bool,
+        i_distrust_people94: bool,
+        i_know_how_to_get_things_done95: bool,
+        i_am_not_easily_annoyed96: bool,
+        i_avoid_crowds97: bool,
+        i_do_not_enjoy_going_to_art_galleries_or_exhibitions98: bool,
+        i_sometimes_am_un_cooperative_i_hinder_other_peoples_plans99: bool,
+        i_leave_my_bits_and_pieces_and_belongings_around100: bool,
 
     ) -> Result<()> {
         let answer = &mut ctx.accounts.answer;
@@ -192,7 +202,17 @@ pub mod sixteen_personalities {
         answer.i_believe_laws_should_be_strictly_enforced88 = i_believe_laws_should_be_strictly_enforced88; let i_believe_laws_should_be_strictly_enforced88_ = answer.i_believe_laws_should_be_strictly_enforced88 as u8;
         answer.i_am_not_interested_in_other_peoples_problems89 = i_am_not_interested_in_other_peoples_problems89; let i_am_not_interested_in_other_peoples_problems89_ = answer.i_am_not_interested_in_other_peoples_problems89 as u8;
         answer.i_rush_into_things90 = i_rush_into_things90; let i_rush_into_things90_ = answer.i_rush_into_things90 as u8;
-        
+        answer.i_get_stressed_out_easily91 = i_get_stressed_out_easily91; let i_get_stressed_out_easily91_ = answer.i_get_stressed_out_easily91 as u8;
+        answer.i_keep_others_at_a_distance92 = i_keep_others_at_a_distance92; let i_keep_others_at_a_distance92_ = answer.i_keep_others_at_a_distance92 as u8;
+        answer.i_like_to_get_lost_in_thought93 = i_like_to_get_lost_in_thought93; let i_like_to_get_lost_in_thought93_ = answer.i_like_to_get_lost_in_thought93 as u8;
+        answer.i_distrust_people94 = i_distrust_people94; let i_distrust_people94_ = answer.i_distrust_people94 as u8;
+        answer.i_know_how_to_get_things_done95 = i_know_how_to_get_things_done95; let i_know_how_to_get_things_done95_ = answer.i_know_how_to_get_things_done95 as u8;
+        answer.i_am_not_easily_annoyed96 = i_am_not_easily_annoyed96; let i_am_not_easily_annoyed96_ = answer.i_am_not_easily_annoyed96 as u8;
+        answer.i_avoid_crowds97 = i_avoid_crowds97; let i_avoid_crowds97_ = answer.i_avoid_crowds97 as u8;
+        answer.i_do_not_enjoy_going_to_art_galleries_or_exhibitions98 = i_do_not_enjoy_going_to_art_galleries_or_exhibitions98; let i_do_not_enjoy_going_to_art_galleries_or_exhibitions98_ = answer.i_do_not_enjoy_going_to_art_galleries_or_exhibitions98 as u8;
+        answer.i_sometimes_am_un_cooperative_i_hinder_other_peoples_plans99 = i_sometimes_am_un_cooperative_i_hinder_other_peoples_plans99; let i_sometimes_am_un_cooperative_i_hinder_other_peoples_plans99_ = answer.i_sometimes_am_un_cooperative_i_hinder_other_peoples_plans99 as u8;
+        answer.i_leave_my_bits_and_pieces_and_belongings_around100 = i_leave_my_bits_and_pieces_and_belongings_around100; let i_leave_my_bits_and_pieces_and_belongings_around100_ = answer.i_leave_my_bits_and_pieces_and_belongings_around100 as u8;
+
 
         let score: u8 = i_am_a_worrier1_ 
         + i_make_friends_easily2_
@@ -283,7 +303,17 @@ pub mod sixteen_personalities {
         + i_love_life87_
         + i_believe_laws_should_be_strictly_enforced88_
         + i_am_not_interested_in_other_peoples_problems89_;
-        + i_rush_into_things90_;
+        + i_rush_into_things90_
+        + i_get_stressed_out_easily91_
+        + i_keep_others_at_a_distance92_
+        + i_like_to_get_lost_in_thought93_
+        + i_distrust_people94_
+        + i_know_how_to_get_things_done95_
+        + i_am_not_easily_annoyed96_
+        + i_avoid_crowds97_
+        + i_do_not_enjoy_going_to_art_galleries_or_exhibitions98_
+        + i_sometimes_am_un_cooperative_i_hinder_other_peoples_plans99_
+        + i_leave_my_bits_and_pieces_and_belongings_around100_;
 
         if score <= 8 {
             msg!("ESTJ - The Controller: Everything around them should be and function as they wish.");
@@ -437,6 +467,16 @@ pub struct Answer16personalitites {
     pub i_believe_laws_should_be_strictly_enforced88: bool,
     pub i_am_not_interested_in_other_peoples_problems89: bool,
     pub i_rush_into_things90: bool,
+    pub i_get_stressed_out_easily91: bool,
+    pub i_keep_others_at_a_distance92: bool,
+    pub i_like_to_get_lost_in_thought93: bool,
+    pub i_distrust_people94: bool,
+    pub i_know_how_to_get_things_done95: bool,
+    pub i_am_not_easily_annoyed96: bool,
+    pub i_avoid_crowds97: bool,
+    pub i_do_not_enjoy_going_to_art_galleries_or_exhibitions98: bool,
+    pub i_sometimes_am_un_cooperative_i_hinder_other_peoples_plans99: bool,
+    pub i_leave_my_bits_and_pieces_and_belongings_around100: bool,
 }
 
 impl Answer16personalitites {
@@ -446,5 +486,5 @@ impl Answer16personalitites {
 }
 
 const DISCRIMINATOR: usize = 8;
-const BOOL_ANSWERS: usize = 1 * 90;
+const BOOL_ANSWERS: usize = 1 * 100;
 const PUBKEY: usize = 32;
