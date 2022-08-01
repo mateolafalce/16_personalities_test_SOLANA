@@ -108,6 +108,16 @@ pub mod sixteen_personalities {
         i_do_not_enjoy_going_to_art_galleries_or_exhibitions98: bool,
         i_sometimes_am_un_cooperative_i_hinder_other_peoples_plans99: bool,
         i_leave_my_bits_and_pieces_and_belongings_around100: bool,
+        i_feel_comfortable_with_myself101: bool,
+        i_wait_for_others_to_take_the_lead102: bool,
+        i_dont_understand_people_who_get_emotional103: bool,
+        i_dont_have_time_for_other_people104: bool,
+        i_sometimes_break_my_promises105: bool,
+        i_am_not_bothered_by_difficult_social_situations106: bool,
+        i_react_slowly107: bool,
+        i_am_attached_to_conventional_ways108: bool,
+        i_always_even_the_score_with_others109: bool,
+        i_sometimes_put_little_time_and_effort_into_my_work110: bool,
 
     ) -> Result<()> {
         let answer = &mut ctx.accounts.answer;
@@ -212,6 +222,16 @@ pub mod sixteen_personalities {
         answer.i_do_not_enjoy_going_to_art_galleries_or_exhibitions98 = i_do_not_enjoy_going_to_art_galleries_or_exhibitions98; let i_do_not_enjoy_going_to_art_galleries_or_exhibitions98_ = answer.i_do_not_enjoy_going_to_art_galleries_or_exhibitions98 as u8;
         answer.i_sometimes_am_un_cooperative_i_hinder_other_peoples_plans99 = i_sometimes_am_un_cooperative_i_hinder_other_peoples_plans99; let i_sometimes_am_un_cooperative_i_hinder_other_peoples_plans99_ = answer.i_sometimes_am_un_cooperative_i_hinder_other_peoples_plans99 as u8;
         answer.i_leave_my_bits_and_pieces_and_belongings_around100 = i_leave_my_bits_and_pieces_and_belongings_around100; let i_leave_my_bits_and_pieces_and_belongings_around100_ = answer.i_leave_my_bits_and_pieces_and_belongings_around100 as u8;
+        answer.i_feel_comfortable_with_myself101 = i_feel_comfortable_with_myself101; let i_feel_comfortable_with_myself101_ = answer.i_feel_comfortable_with_myself101 as u8;
+        answer.i_wait_for_others_to_take_the_lead102 = i_wait_for_others_to_take_the_lead102; let i_wait_for_others_to_take_the_lead102_ = answer.i_wait_for_others_to_take_the_lead102 as u8;
+        answer.i_dont_understand_people_who_get_emotional103 = i_dont_understand_people_who_get_emotional103; let i_dont_understand_people_who_get_emotional103_ = answer.i_dont_understand_people_who_get_emotional103 as u8;
+        answer.i_dont_have_time_for_other_people104 = i_dont_have_time_for_other_people104; let i_dont_have_time_for_other_people104_ = answer.i_dont_have_time_for_other_people104 as u8;
+        answer.i_sometimes_break_my_promises105 = i_sometimes_break_my_promises105; let i_sometimes_break_my_promises105_ = answer.i_sometimes_break_my_promises105 as u8;
+        answer.i_am_not_bothered_by_difficult_social_situations106 = i_am_not_bothered_by_difficult_social_situations106; let i_am_not_bothered_by_difficult_social_situations106_ = answer.i_am_not_bothered_by_difficult_social_situations106 as u8;
+        answer.i_react_slowly107 = i_react_slowly107; let i_react_slowly107_ = answer.i_react_slowly107 as u8;
+        answer.i_am_attached_to_conventional_ways108 = i_am_attached_to_conventional_ways108; let i_am_attached_to_conventional_ways108_ = answer.i_am_attached_to_conventional_ways108 as u8;
+        answer.i_always_even_the_score_with_others109 = i_always_even_the_score_with_others109; let i_always_even_the_score_with_others109_ = answer.i_always_even_the_score_with_others109 as u8;
+        answer.i_sometimes_put_little_time_and_effort_into_my_work110 = i_sometimes_put_little_time_and_effort_into_my_work110; let i_sometimes_put_little_time_and_effort_into_my_work110_ = answer.i_sometimes_put_little_time_and_effort_into_my_work110 as u8;
 
 
         let score: u8 = i_am_a_worrier1_ 
@@ -313,7 +333,17 @@ pub mod sixteen_personalities {
         + i_avoid_crowds97_
         + i_do_not_enjoy_going_to_art_galleries_or_exhibitions98_
         + i_sometimes_am_un_cooperative_i_hinder_other_peoples_plans99_
-        + i_leave_my_bits_and_pieces_and_belongings_around100_;
+        + i_leave_my_bits_and_pieces_and_belongings_around100_
+        + i_feel_comfortable_with_myself101_
+        + i_wait_for_others_to_take_the_lead102_
+        + i_dont_understand_people_who_get_emotional103_
+        + i_dont_have_time_for_other_people104_
+        + i_sometimes_break_my_promises105_
+        + i_am_not_bothered_by_difficult_social_situations106_
+        + i_react_slowly107_
+        + i_am_attached_to_conventional_ways108_
+        + i_always_even_the_score_with_others109_
+        + i_sometimes_put_little_time_and_effort_into_my_work110_;
 
         if score <= 8 {
             msg!("ESTJ - The Controller: Everything around them should be and function as they wish.");
@@ -477,6 +507,16 @@ pub struct Answer16personalitites {
     pub i_do_not_enjoy_going_to_art_galleries_or_exhibitions98: bool,
     pub i_sometimes_am_un_cooperative_i_hinder_other_peoples_plans99: bool,
     pub i_leave_my_bits_and_pieces_and_belongings_around100: bool,
+    pub i_feel_comfortable_with_myself101: bool,
+    pub i_wait_for_others_to_take_the_lead102: bool,
+    pub i_dont_understand_people_who_get_emotional103: bool,
+    pub i_dont_have_time_for_other_people104: bool,
+    pub i_sometimes_break_my_promises105: bool,
+    pub i_am_not_bothered_by_difficult_social_situations106: bool,
+    pub i_react_slowly107: bool,
+    pub i_am_attached_to_conventional_ways108: bool,
+    pub i_always_even_the_score_with_others109: bool,
+    pub i_sometimes_put_little_time_and_effort_into_my_work110: bool,
 }
 
 impl Answer16personalitites {
@@ -486,5 +526,5 @@ impl Answer16personalitites {
 }
 
 const DISCRIMINATOR: usize = 8;
-const BOOL_ANSWERS: usize = 1 * 100;
+const BOOL_ANSWERS: usize = 1 * 110;
 const PUBKEY: usize = 32;

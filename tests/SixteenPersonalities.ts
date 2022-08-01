@@ -112,6 +112,16 @@ describe("Sixteen Personalities Test", () => {
       false, //i_do_not_enjoy_going_to_art_galleries_or_exhibitions98 ? 
       false, //i_sometimes_am_un_cooperative_i_hinder_other_peoples_plans99 ?
       false, //i_leave_my_bits_and_pieces_and_belongings_around100 ?
+      true, //i_feel_comfortable_with_myself101 ?
+      false, //i_wait_for_others_to_take_the_lead102 ?
+      true, //i_dont_understand_people_who_get_emotional103 ?
+      true, //i_dont_have_time_for_other_people104 ?
+      false, //i_sometimes_break_my_promises105 ?
+      true, //i_am_not_bothered_by_difficult_social_situations106 ?
+      false, //i_react_slowly107 ?
+      false, //i_am_attached_to_conventional_ways108 ?
+      true, //i_always_even_the_score_with_others109 ?
+      false, //i_sometimes_put_little_time_and_effort_into_my_work110 ?
     {
       accounts: {
         answer: answer.publicKey,
