@@ -122,6 +122,16 @@ describe("Sixteen Personalities Test", () => {
       false, //i_am_attached_to_conventional_ways108 ?
       true, //i_always_even_the_score_with_others109 ?
       false, //i_sometimes_put_little_time_and_effort_into_my_work110 ?
+      true, //i_am_able_to_control_my_cravings111 ?
+      true, //i_like_action_and_danger112 ?
+      false, //i_am_not_interested_in_theoretical_discussions113 ?
+      false, //i_like_to_talk_about_my_qualities114 ?
+      false, //i_have_difficulty_starting_tasks115 ?
+      true, //i_remain_calm_under_pressure116 ?
+      true, //i_look_at_the_bright_side_of_life117 ?
+      true, //i_believe_that_we_should_be_very_tough_on_crime118 ?
+      true, //i_try_not_to_think_about_the_needy119 ?
+      false, //i_act_without_thinking120 ?
     {
       accounts: {
         answer: answer.publicKey,
@@ -134,7 +144,7 @@ describe("Sixteen Personalities Test", () => {
   });
 
 
-  /*it('can delete a tweet', async () => {
+  it('can delete a tweet', async () => {
     const del = await program.rpc.deleteQuiz({
         accounts: {
             answer: answer.publicKey,
@@ -142,6 +152,6 @@ describe("Sixteen Personalities Test", () => {
         },
     });
     console.log("You deleted your account",del)
-  });*/
+  });
 
 });

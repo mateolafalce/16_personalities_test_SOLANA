@@ -1,6 +1,6 @@
 use anchor_lang::prelude::*;
 
-declare_id!("CiLfoGqJQuKfXTMDgqrdPuXMGhzHAwEP8b7bizVQBeqp");
+declare_id!("BDsVGnwVTjjV93wSjttonsXWLt4Sj1Ec6thTKsciQXgD");
 
 #[program]
 pub mod sixteen_personalities {
@@ -97,7 +97,7 @@ pub mod sixteen_personalities {
         i_love_life87: bool,
         i_believe_laws_should_be_strictly_enforced88: bool,
         i_am_not_interested_in_other_peoples_problems89: bool,
-        i_rush_into_things90: bool;
+        i_rush_into_things90: bool,
         i_get_stressed_out_easily91: bool,
         i_keep_others_at_a_distance92: bool,
         i_like_to_get_lost_in_thought93: bool,
@@ -118,7 +118,16 @@ pub mod sixteen_personalities {
         i_am_attached_to_conventional_ways108: bool,
         i_always_even_the_score_with_others109: bool,
         i_sometimes_put_little_time_and_effort_into_my_work110: bool,
-
+        i_am_able_to_control_my_cravings111: bool,
+        i_like_action_and_danger112: bool,
+        i_am_not_interested_in_theoretical_discussions113: bool,
+        i_like_to_talk_about_my_qualities114: bool,
+        i_have_difficulty_starting_tasks115: bool,
+        i_remain_calm_under_pressure116: bool,
+        i_look_at_the_bright_side_of_life117: bool,
+        i_believe_that_we_should_be_very_tough_on_crime118: bool,
+        i_try_not_to_think_about_the_needy119: bool,
+        i_act_without_thinking120: bool,
     ) -> Result<()> {
         let answer = &mut ctx.accounts.answer;
         answer.authority = authority;
@@ -232,6 +241,16 @@ pub mod sixteen_personalities {
         answer.i_am_attached_to_conventional_ways108 = i_am_attached_to_conventional_ways108; let i_am_attached_to_conventional_ways108_ = answer.i_am_attached_to_conventional_ways108 as u8;
         answer.i_always_even_the_score_with_others109 = i_always_even_the_score_with_others109; let i_always_even_the_score_with_others109_ = answer.i_always_even_the_score_with_others109 as u8;
         answer.i_sometimes_put_little_time_and_effort_into_my_work110 = i_sometimes_put_little_time_and_effort_into_my_work110; let i_sometimes_put_little_time_and_effort_into_my_work110_ = answer.i_sometimes_put_little_time_and_effort_into_my_work110 as u8;
+        answer.i_am_able_to_control_my_cravings111 = i_am_able_to_control_my_cravings111; let i_am_able_to_control_my_cravings111_ = answer.i_am_able_to_control_my_cravings111 as u8;
+        answer.i_like_action_and_danger112 = i_like_action_and_danger112; let i_like_action_and_danger112_ = answer.i_like_action_and_danger112 as u8;
+        answer.i_am_not_interested_in_theoretical_discussions113 = i_am_not_interested_in_theoretical_discussions113; let i_am_not_interested_in_theoretical_discussions113_ = answer.i_am_not_interested_in_theoretical_discussions113 as u8;
+        answer.i_like_to_talk_about_my_qualities114 = i_like_to_talk_about_my_qualities114; let i_like_to_talk_about_my_qualities114_ = answer.i_like_to_talk_about_my_qualities114 as u8;
+        answer.i_have_difficulty_starting_tasks115 = i_have_difficulty_starting_tasks115; let i_have_difficulty_starting_tasks115_ = answer.i_have_difficulty_starting_tasks115 as u8;
+        answer.i_remain_calm_under_pressure116 = i_remain_calm_under_pressure116; let i_remain_calm_under_pressure116_ = answer.i_remain_calm_under_pressure116 as u8;
+        answer.i_look_at_the_bright_side_of_life117 = i_look_at_the_bright_side_of_life117; let i_look_at_the_bright_side_of_life117_ = answer.i_look_at_the_bright_side_of_life117 as u8;
+        answer.i_believe_that_we_should_be_very_tough_on_crime118 = i_believe_that_we_should_be_very_tough_on_crime118; let i_believe_that_we_should_be_very_tough_on_crime118_ = answer.i_believe_that_we_should_be_very_tough_on_crime118 as u8;
+        answer.i_try_not_to_think_about_the_needy119 = i_try_not_to_think_about_the_needy119; let i_try_not_to_think_about_the_needy119_ = answer.i_try_not_to_think_about_the_needy119 as u8;
+        answer.i_act_without_thinking120 = i_act_without_thinking120; let i_act_without_thinking120_ = answer.i_act_without_thinking120 as u8;
 
 
         let score: u8 = i_am_a_worrier1_ 
@@ -322,7 +341,7 @@ pub mod sixteen_personalities {
         + i_feel_that_im_unable_to_deal_with_things86_
         + i_love_life87_
         + i_believe_laws_should_be_strictly_enforced88_
-        + i_am_not_interested_in_other_peoples_problems89_;
+        + i_am_not_interested_in_other_peoples_problems89_
         + i_rush_into_things90_
         + i_get_stressed_out_easily91_
         + i_keep_others_at_a_distance92_
@@ -343,7 +362,17 @@ pub mod sixteen_personalities {
         + i_react_slowly107_
         + i_am_attached_to_conventional_ways108_
         + i_always_even_the_score_with_others109_
-        + i_sometimes_put_little_time_and_effort_into_my_work110_;
+        + i_sometimes_put_little_time_and_effort_into_my_work110_
+        + i_am_able_to_control_my_cravings111_
+        + i_like_action_and_danger112_
+        + i_am_not_interested_in_theoretical_discussions113_
+        + i_like_to_talk_about_my_qualities114_
+        + i_have_difficulty_starting_tasks115_
+        + i_remain_calm_under_pressure116_
+        + i_look_at_the_bright_side_of_life117_
+        + i_believe_that_we_should_be_very_tough_on_crime118_
+        + i_try_not_to_think_about_the_needy119_
+        + i_act_without_thinking120_;
 
         if score <= 8 {
             msg!("ESTJ - The Controller: Everything around them should be and function as they wish.");
@@ -378,12 +407,11 @@ pub mod sixteen_personalities {
         } else if score > 115 && score <= 120 {
             msg!("INFJ - The ideological: Quite sensitive, basing her story on a clear ideal or ideals.")
         }
-        
-
-        pub fn delete_quiz(ctx: Context<Delete>) -> ProgramResult {
-            Ok(())
-        }
-
+        Ok(())
+    }
+    pub fn delete_quiz(
+        _ctx: Context<Delete>
+    ) -> Result<()>{
         Ok(())
     }
 }
@@ -517,6 +545,16 @@ pub struct Answer16personalitites {
     pub i_am_attached_to_conventional_ways108: bool,
     pub i_always_even_the_score_with_others109: bool,
     pub i_sometimes_put_little_time_and_effort_into_my_work110: bool,
+    pub i_am_able_to_control_my_cravings111: bool,
+    pub i_like_action_and_danger112: bool,
+    pub i_am_not_interested_in_theoretical_discussions113: bool,
+    pub i_like_to_talk_about_my_qualities114: bool,
+    pub i_have_difficulty_starting_tasks115: bool,
+    pub i_remain_calm_under_pressure116: bool,
+    pub i_look_at_the_bright_side_of_life117: bool,
+    pub i_believe_that_we_should_be_very_tough_on_crime118: bool,
+    pub i_try_not_to_think_about_the_needy119: bool,
+    pub i_act_without_thinking120: bool,
 }
 
 impl Answer16personalitites {
@@ -526,5 +564,5 @@ impl Answer16personalitites {
 }
 
 const DISCRIMINATOR: usize = 8;
-const BOOL_ANSWERS: usize = 1 * 110;
+const BOOL_ANSWERS: usize = 1 * 120;
 const PUBKEY: usize = 32;
